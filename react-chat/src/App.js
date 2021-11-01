@@ -13,10 +13,8 @@ class Home extends React.Component {
   addMassage(mm) {
     let old =this.state.allMassages
     console.log(old,"old");
-
-    let newArr = old.push(mm)
-    console.log("newArr",newArr);
-    this.setState({ name: newArr })
+    old.push(mm)
+    this.setState({ allMassages: old })
   }
   render() {
 
